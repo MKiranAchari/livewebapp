@@ -13,7 +13,7 @@ async function load(page: string) {
     }
 
     if (page === "profile") {
-        const res = await fetch("http://127.0.0.1:8000/api/profile/");
+        const res = await fetch("https://127.0.0.1:8000/api/profile/");
         const data = await res.json();
         pageHtml = ProfilePage(data);
     }

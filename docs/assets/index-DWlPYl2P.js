@@ -17,4 +17,4 @@
             <p>Name: ${e.name}</p>
             <p>Email: ${e.email}</p>
         </div>
-    `}var r=document.querySelector(`#app`);async function i(i){let o=``;i===`home`&&(o=t()),i===`profile`&&(o=n(await(await fetch(`http://127.0.0.1:8000/api/profile/`)).json())),r.innerHTML=e()+o,a()}function a(){document.getElementById(`home-link`)?.addEventListener(`click`,e=>{e.preventDefault(),i(`home`)}),document.getElementById(`profile-link`)?.addEventListener(`click`,e=>{e.preventDefault(),i(`profile`)})}i(`home`);
+    `}var r=document.querySelector(`#app`);async function i(i){let o=``;i===`home`&&(o=t()),i===`profile`&&(o=n(await(await fetch(`https://127.0.0.1:8000/api/profile/`)).json())),r.innerHTML=e()+o,a()}function a(){document.getElementById(`home-link`)?.addEventListener(`click`,e=>{e.preventDefault(),i(`home`)}),document.getElementById(`profile-link`)?.addEventListener(`click`,e=>{e.preventDefault(),i(`profile`)})}i(`home`);
